@@ -48,7 +48,7 @@ In this task, you will create a virtual network with multiple subnets by using t
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource Group | the name of a **new** resource group **az104-04-rg1** |
+    | Resource Group | locate the resource group **XXXXX-az104-04-rg1** |
     | Name | **az104-04-vnet1** |
     | Region | the name of any Azure region available in the subscription you will use in this lab |
 
@@ -96,10 +96,10 @@ In this task, you will deploy Azure virtual machines into different subnets of t
     >**Note**: You must upload each file separately. After uploading, use **dir** to ensure both files were successfully uploaded.
 
 1. From the Cloud Shell pane, run the following to deploy two virtual machines by using the template and parameter files:
-    >**Note**: You will be prompted to provide an Admin password.
+    >**Note**: You will be prompted to provide an Admin password. Replace the XXXXX with your "Lab ID"
     
    ```powershell
-   $rgName = 'az104-04-rg1'
+   $rgName = 'XXXXX-az104-04-rg1'
 
    New-AzResourceGroupDeployment `
       -ResourceGroupName $rgName `
